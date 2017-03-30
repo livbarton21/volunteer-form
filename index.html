@@ -17,7 +17,7 @@
   </header>
 
   <form>
-    <fieldset>
+    <fieldset class="wrapper">
       <legend>Personal details</legend>
       <div class="grid grid-middle">
         <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-top pad-bottom">
@@ -60,21 +60,17 @@
         </div>
       </div>
     </fieldset>
-    <fieldset>
-      <legend>Address<legend>
+    <fieldset class="wrapper pad-bottom">
+      <legend class="pad-bottom pad-top gutter">Address<legend>
         <div class="grid">
-          <div class="unit">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-top-1-4">
             <label for="address">Street address</label>
               <input type="text" name="address" id="address"></input>
           </div>
-          <div class="unit">
+          <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-top-1-2">
               <label for="address">City</label>
                 <input type="text" name="city" id="city"></input>
               </div>
-              <div class="unit">
-                <label for="address">Postal code</label>
-                  <input type="text" name="postal code" id="postal code"></input>
-        </div>
         <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-top-1-4">
           <label for="name">Province</label>
           <select class="dropdown" name="dropdown">
@@ -94,6 +90,10 @@
             <option value="">Yukon</option>
           </select>
         </div>
+        <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2 pad-top-1-4">
+          <label for="address">Postal code</label>
+            <input type="text" name="postal code" id="postal code"></input>
+  </div>
       </div>
     </fieldset>
   </form>
